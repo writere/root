@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/carterGrey"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorDark"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="购物车"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/carter_text_manager"
+            android:textColor="@color/colorDark"
+            android:textSize="14sp"
+            android:text="管理"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/mainGrey"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/carter_view_empty"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/colorDark"
+            android:textSize="14sp"
+            android:text="购物车为空"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/carter_view_scream"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <View
+            android:background="@color/mainGrey"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+        <ImageView
+            android:id="@+id/carter_img_all"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/choose" />
+        <TextView
+            android:id="@+id/carter_text_all"
+            android:textColor="@color/colorDark"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginLeft="55dp"
+            android:text="全选"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorDark"
+                android:textSize="14sp"
+                android:text="合计："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/carter_text_money"
+                android:textStyle="bold"
+                android:textColor="@color/homeRed"
+                android:textSize="14sp"
+                android:text="¥ 0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/carter_text_pay"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:background="@drawable/shape_carter_check"
+                android:textSize="16sp"
+                android:text="结算(0)"
+                android:layout_width="80dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

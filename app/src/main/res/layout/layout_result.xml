@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/result_layout">
+
+    <RelativeLayout
+        android:id="@+id/result_view_body"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.futrue.following.OvalImageView
+            app:radius="3dp"
+            android:id="@+id/result_img_food"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:id="@+id/result_text_price"
+            android:textColor="@color/colorDark"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="¥8.8"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/result_text_name"
+            android:textColor="@color/colorDark"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="120dp"
+            android:text="麻婆豆腐"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/result_text_time"
+            android:textColor="@color/colorDark"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="90dp"
+            android:textSize="11sp"
+            android:text="40分钟"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/result_text_distance"
+            android:textColor="@color/colorDark"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="90dp"
+            android:textSize="11sp"
+            android:text="4公里"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/result_img_add"
+            android:background="@drawable/add"
+            android:layout_alignParentRight="true"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <ImageView
+            android:background="@drawable/star"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/result_text_score"
+            android:textColor="@color/homeYellow"
+            android:textSize="12sp"
+            android:layout_marginLeft="107dp"
+            android:layout_marginTop="20dp"
+            android:text="4.9"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/result_text_sale"
+            android:textColor="@color/colorDark"
+            android:textSize="12sp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="20dp"
+            android:text="月销量 88"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp" />
+        <com.futrue.following.OvalImageView
+            app:radius="1dp"
+            android:id="@+id/result_img_icon"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="60dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/result_text_shop"
+            android:textColor="@color/colorDark"
+            android:textSize="12sp"
+            android:layout_marginTop="62.5dp"
+            android:layout_marginLeft="115dp"
+            android:text="菜根鲜"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/result_text_send"
+            android:textColor="@color/colorDark"
+            android:textSize="11sp"
+            android:layout_marginTop="62.5dp"
+            android:layout_alignParentRight="true"
+            android:text="起送 ¥25  配送 ¥30  人均 ¥30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/result_view_discount"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="15dp">
+            <TextView
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:background="@drawable/shape_carter_discount"
+                android:id="@+id/result_text_count"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/mainGreen"
+                android:textSize="11sp"
+                android:text="赠送饮料"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/result_img_more"
+            android:background="@drawable/more"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="90dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

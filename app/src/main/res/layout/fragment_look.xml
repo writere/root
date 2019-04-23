@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/list_img_back"
+            android:background="@drawable/back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textColor="@color/colorDark"
+            android:id="@+id/list_text_find"
+            android:textStyle="bold"
+            android:text="   粥"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/list_text_remove"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="@color/colorDark"
+            android:text="取消"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/list_text_order"
+            android:textColor="@color/colorDark"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"
+            android:text="综合排序"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/list_img_order"
+            android:background="@drawable/order"
+            android:layout_marginLeft="62dp"
+            android:layout_centerVertical="true"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <TextView
+            android:id="@+id/list_text_distance"
+            android:textColor="@color/colorDark"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:layout_marginLeft="90dp"
+            android:text="距离"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/list_text_sale"
+            android:textColor="@color/colorDark"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:layout_marginLeft="130dp"
+            android:text="销量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/list_text_choose"
+            android:textColor="@color/colorDark"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:text="筛选"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/list_img_choose"
+            android:background="@drawable/select"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/list_view_result"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/group_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/group_view_group"
+        android:paddingTop="15dp"
+        android:background="@drawable/shape_mine_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/group_img_shopChoose"
+                android:background="@drawable/choose"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="15dp" />
+            <com.futrue.following.OvalImageView
+                android:id="@+id/group_img_shopIcon"
+                app:radius="17.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/group_text_shopName"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="菜根鲜"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp">
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/group_text_status"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="正在营业"
+                android:background="@drawable/shape_carter_work"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_view_foodScream"
+            android:orientation="vertical"
+            android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:paddingBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_mine_card"
+        android:layout_alignBottom="@id/group_view_group"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/group_text_send"
+            android:layout_marginLeft="45dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorDark"
+            android:text="配送费3元  满25元起送"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/group_view_discount"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp">
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/group_img_more"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/more"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
